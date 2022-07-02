@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gcn-dev-site/static/css/main.073c9b0a.css",
+    "main.js": "/gcn-dev-site/static/js/main.06e6d66d.js",
+    "static/js/787.20f4a7e2.chunk.js": "/gcn-dev-site/static/js/787.20f4a7e2.chunk.js",
+    "index.html": "/gcn-dev-site/index.html",
+    "main.073c9b0a.css.map": "/gcn-dev-site/static/css/main.073c9b0a.css.map",
+    "main.06e6d66d.js.map": "/gcn-dev-site/static/js/main.06e6d66d.js.map",
+    "787.20f4a7e2.chunk.js.map": "/gcn-dev-site/static/js/787.20f4a7e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.06e6d66d.js"
+  ]
+}
