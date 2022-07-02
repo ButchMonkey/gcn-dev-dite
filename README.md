@@ -7,10 +7,12 @@ My sample of the Global Cycling Network website for mobile.
 Either run the development mode server with `yarn start` or build and host yourself with `yarn build`.\
 Alternatively view the demo on github page - https://butchmonkey.github.io/gcn-dev-site/
 
+(Designed with only iPhone 6 chrome emulator in mind to speed up concept)
+
 ## Preview mock designs
 
 I created mock designs for all pages before starting work on this project.\
-Should you wish to view these designs, you can check out the figma project [here](https://www.figma.com/file/azCF93qFHpC65BezfPbysb/GCN?node-id=3%3A265)\
+Should you wish to view these designs, you can check out the figma project [here](https://www.figma.com/file/azCF93qFHpC65BezfPbysb/GCN?node-id=3%3A265)
 
 Pages include:
 
@@ -41,4 +43,4 @@ The build is minified and the filenames include the hashes.
 ## Other
 
 Created by Patrice Butcher 02/07/2022\
-Template built with create-react-app
+Template built with [create-react-app](https://facebook.github.io/create-react-app)
