@@ -1,0 +1,40 @@
+.app-header {
+	/*
+	-webkit-app-region: drag;
+	-webkit-user-select: none;
+	*/
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 49px;
+	background: var(--main-brand-color);
+}
+
+.app-header_container {
+	height: 100%;
+	width: calc(100% - 16px);
+	font-weight: 500;
+	font-size: 12px;
+	color: var(--alt-text-color);
+	padding:0 1em 0 1em;
+	display: flex;
+	align-items: center;
+	gap: 3px;
+	/* line-height: 1.67; */
+
+}
+
+.app-header_divider {
+	background: #00000033;
+	width: 1px;
+	height: 2.5em;
+}
+
+.app-header_flex_spacer {
+	flex-grow: 1;
+}
+
+.app-header svg {
+	height: 2.5em
+}

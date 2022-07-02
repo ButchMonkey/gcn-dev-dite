@@ -1,0 +1,34 @@
+.page_header {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 100vw;
+	height: 100vh;
+	flex: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+.page_banner {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 100vw;
+	height: 100vh;
+	flex: none;
+}
+
+.page_content {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	position: relative;
+	top: 90px;
+	width: 100vw;
+	height: calc(100vh - 90px);
+	flex: none;
+	position: relative;
+	flex-grow: 1;
+	overflow-y: auto;
+}

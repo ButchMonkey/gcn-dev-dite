@@ -1,0 +1,22 @@
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background: white;
+	height: 42px;
+	width: 100%;
+	flex: none;
+}
+
+.banner svg {
+	fill: var(--main-brand-color);
+}
+
+.banner_link {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	font-size: 16px;
+	text-decoration: none;
+	color: var(--main-text-color);
+}
