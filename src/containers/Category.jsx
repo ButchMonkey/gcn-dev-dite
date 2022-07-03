@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Page from '../components/Page';
 import Card from '../components/Card';
 import * as Categories from '../assets/Categories';
 

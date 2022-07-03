@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Linkify from 'react-linkify';
-import Page from '../components/Page';
 import Card from '../components/Card';
 import './Videos.css';
 

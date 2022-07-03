@@ -33,12 +33,13 @@ const Sidebar = () => {
 				return (
 					<NavLink
 						exact
+						key={itemName}
+						onClick={() => handleCloseMenu()}
 						to={SidebarItems[itemName].link}
 						className="sidebar_menu_item_link"
 						activeClassName="sidebar_menu_item_link_active"
-						onClick={() => handleCloseMenu()}
 					>
-						<div className="sidebar_menu_item" key={itemName}>
+						<div className="sidebar_menu_item">
 							{SidebarItems[itemName].name}
 						</div>
 					</NavLink>

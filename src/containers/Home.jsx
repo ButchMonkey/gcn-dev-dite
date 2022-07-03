@@ -1,7 +1,6 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
 // import RoutePatterns from '../routing/RoutePatterns';
-import Page from '../components/Page';
 import Card from '../components/Card';
 
 const Home = () => (
