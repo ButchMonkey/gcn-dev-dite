@@ -7,7 +7,7 @@ import './App.css';
 
 export default function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/gcn-dev-site">
 			<Page>
 				<Routes />
 			</Page>
