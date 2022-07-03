@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gcn-dev-site/static/css/main.9f34bffb.css",
-    "main.js": "/gcn-dev-site/static/js/main.73af9ca7.js",
+    "main.css": "/gcn-dev-site/static/css/main.5b6d4256.css",
+    "main.js": "/gcn-dev-site/static/js/main.a2cc12ad.js",
     "index.html": "/gcn-dev-site/index.html",
-    "main.9f34bffb.css.map": "/gcn-dev-site/static/css/main.9f34bffb.css.map",
-    "main.73af9ca7.js.map": "/gcn-dev-site/static/js/main.73af9ca7.js.map"
+    "main.5b6d4256.css.map": "/gcn-dev-site/static/css/main.5b6d4256.css.map",
+    "main.a2cc12ad.js.map": "/gcn-dev-site/static/js/main.a2cc12ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f34bffb.css",
-    "static/js/main.73af9ca7.js"
+    "static/css/main.5b6d4256.css",
+    "static/js/main.a2cc12ad.js"
   ]
 }

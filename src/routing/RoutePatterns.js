@@ -1,11 +1,6 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	Home: '/',
-	Nested: '/nested',
+	Category: '/category/:category',
 	Videos: '/videos/:videoId',
-	NestedRoutePatterns: {
-		General: '/nested/general',
-		Notifications: '/nested/notifications',
-		Backup: '/nested/backup',
-		Advanced: '/nested/advanced'
-	}
 };

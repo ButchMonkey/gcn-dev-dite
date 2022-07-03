@@ -1,0 +1,56 @@
+{
+	"Home": {
+		"name": "Home",
+		"link": "/"
+	},
+	"gcn-show": {
+		"name": "GCN Show",
+		"link": "/category/gcn-show",
+		"description": "Watch The GCN Show every Tuesday for a round-up of all the cycling news and views from the past week."
+	},
+	"how-to": {
+		"name": "How To",
+		"link": "/category/how-to",
+		"description": "This playlist has all of our How Tos. We've got pro tips for when you're on out your bike, mechanical help, Garmin tutorials, cookery lessons and much more."
+	},
+	"maintenance-mondays": {
+		"name": "Maintenance",
+		"link": "/category/maintenance-mondays",
+		"description": "Keep your bike in shape with GCN's Maintenance Mondays."
+	},
+	"ask-gcn": {
+		"name": "Ask GCN",
+		"link": "/category/ask-gcn",
+		"description": "Get involved and ask your cycling questions in the comments below the videos! Or, you can submit your questions on social media using #TorqueBack"
+	},
+	"train-wicth-gcn": {
+		"name": "Training",
+		"link": "/category/train-wicth-gcn",
+		"description": "Train with GCN"
+	},
+	"features": {
+		"name": "Features",
+		"link": "/category/features",
+		"description": "Pro bikes, behind the scenes, stage insights and tech. It's all here!"
+	},
+	"top-10s": {
+		"name": "Top 10s",
+		"link": "/category/top-10s",
+		"description": "GCN's top tens of everything bike related"
+	},
+	"gcn-racing": {
+		"name": "GCN Racing",
+		"link": "/category/gcn-racing",
+		"description": "GCN Racing brings highlights, commentary and analysis from some of the biggest races on the professional cycling calendar."
+	},
+	"gcn-tech": {
+		"name": "GCN Tech",
+		"link": "/category/gcn-tech",
+		"description": "GCN Tech is utterly obsessed with seeking out and showcasing the best in bikes, tech, products and upgrades. Everywhere. Every week."
+	},
+	"presenters": {
+		"name": "Presenters",
+		"link": "/category/presenters",
+		"description": "Born in January 2013, we're dedicated to bringing you all the action, essential insights and unparalleled access the global stage of road cycling every week, every month, and every year.\nOur videos bring you compelling daily content including expert tutorials, techniques, training, behind the scenes event coverage, humour and entertainment. We put you in the centre of the action: from the iconic summit of the Stelvio to the grandeur of the Champs Elysees – everywhere there is pavé, world-class racing, and pro cyclists.\nPresented by ex-pro Tour de France and Giro d'Italia riders, GCN offers a uniquely qualified insight into the world of cycling, helping to fuel your cycling passion and knowledge. And make you laugh. We think that's important, too."
+	}
+}

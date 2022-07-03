@@ -1,6 +1,4 @@
 import React from 'react';
-import { NavLink as Link } from 'react-router-dom';
-import RoutePatterns from '../routing/RoutePatterns';
 import Branding from '../assets/Images/BrandingIcons';
 import './Banner.css';
 

@@ -1,0 +1,117 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+	position: fixed;
+	width: 36px;
+	height: 30px;
+	left: 8px;
+	top: 7.5px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+	background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+	background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+	background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+	width: 240px !important;
+	height: calc(100% - 49px) !important;
+	transition: all 0.3s ease 0s !important;
+	top: 49px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+	background: white;
+	padding: 1em 0 0 0 ;
+	font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+	fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+	color: #b8b7ad;
+	display: flex;
+	flex-direction: column;
+	/* padding: 0 */
+}
+
+/* Individual item */
+.bm-item {
+	display: inline-block;
+	align-self: flex-start;
+	width: 100%;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+	background: rgba(0, 0, 0, 0.6);
+	top: 49px;
+}
+
+.bm-footer-logo {
+	height: 50px;
+	fill: var(--main-brand-color);
+	bottom: 0;
+	position: absolute;
+	margin-bottom: 25px;
+	align-self: center;
+
+}
+
+
+.sidebar_menu_item {
+	cursor: pointer;
+	padding: 0.6em;
+	width: calc(100% - 2.1em);
+	padding-left: 1.5em
+}
+
+.sidebar_menu_item:hover, .sidebar_menu_item:active {
+	background-color: #1d1d1d1f;
+}
+
+.sidebar_menu_item_link {
+	color: var(--main-text-color);
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.sidebar_menu_item_link_active {
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+
+.sidebar_menu_item_link_active::before {
+	content: '';
+	width: 100%;
+	border-left: solid 3px var(--main-text-color);
+	position: relative;
+	left: -0.5em;
+}
