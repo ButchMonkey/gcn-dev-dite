@@ -20,18 +20,16 @@ const Sidebar = () => {
 				}
 
 				return (
-					<div key={itemName}>
-						<div className="sidebar_menu_item">
-							<NavLink
-								exact
-								to={SidebarItems[itemName].link}
-								className="sidebar_menu_item_link"
-								activeClassName="sidebar_menu_item_link_active"
-							>
-								{SidebarItems[itemName].name}
-							</NavLink>
+					<NavLink
+						exact
+						to={SidebarItems[itemName].link}
+						className="sidebar_menu_item_link"
+						activeClassName="sidebar_menu_item_link_active"
+					>
+						<div className="sidebar_menu_item" key={itemName}>
+							{SidebarItems[itemName].name}
 						</div>
-					</div>
+					</NavLink>
 				);
 			})}
 
