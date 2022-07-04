@@ -28,6 +28,11 @@ Pages include:
 
 In the project directory, you can run:
 
+### `yarn install`
+
+Install all the necessary node packages in order to build
+
+
 ### `yarn start`
 
 Runs the app in the development mode.\
