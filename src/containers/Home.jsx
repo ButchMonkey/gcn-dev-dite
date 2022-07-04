@@ -6,17 +6,14 @@ import { fetchVideos, selectAllVideos } from '../store/slices/videosSlice';
 import './Home.css';
 
 const Home = () => {
-	const dispatch = useDispatch();
 	const videos = useSelector(selectAllVideos);
-	const fetchStatus = useSelector((state) => state.videos.status);
+
+	// const fetchStatus = useSelector((state) => state.videos.status);
+	const dispatch = useDispatch();
 
 	useEffect(() => {
-		if (fetchStatus === 'idle') {
-			dispatch(fetchVideos());
-		}
-	}, [fetchStatus, dispatch]);
-
-	console.log(videos);
+		dispatch(fetchVideos());
+	}, [dispatch]);
 
 	return (
 		<div>
@@ -31,7 +28,36 @@ const Home = () => {
 					/>
 				</div>
 			</Card>
-			<Card>
+			{videos.map((video) => (
+				<Card key={video._id}>
+					<NavLink
+						to={'/videos/' + video.urlTitle}
+						className="card_content"
+					>
+						<div className="home_video-thumbnail">
+							<img
+								src={video.thumbnail}
+								alt={video.title + ' thumbnail'}
+							/>
+						</div>
+						<div className="home_video-header">
+							<div className="home_video-title">
+								{video.title}
+							</div>
+							<div className="home_video-date">
+								Published on{' '}
+								{new Date(
+									video.publishDate
+								).toLocaleDateString()}
+							</div>
+						</div>
+						<div className="home_video-description">
+							{video.description}
+						</div>
+					</NavLink>
+				</Card>
+			))}
+			{/* <Card>
 				<NavLink to="/videos/Y-DnwVSS-vo" className="card_content">
 					<img
 						className="home_video-thumbnail"
@@ -46,7 +72,7 @@ const Home = () => {
 						<div className="home_video-date">July 1st 2022</div>
 					</div>
 				</NavLink>
-			</Card>
+			</Card> */}
 		</div>
 	);
 };

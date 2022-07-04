@@ -38,6 +38,10 @@
 	height: 2.5em
 }
 
+.app-header_logo {
+	padding: 2.5px
+}
+
 .app-header_search {
 	transition: all 0.3s ease-in-out;
 	right: 135px;

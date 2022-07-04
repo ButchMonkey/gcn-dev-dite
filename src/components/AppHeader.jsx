@@ -50,7 +50,7 @@ const AppHeader = ({ className, children }) => {
 					className="app-header_search-bar"
 					style={{ display: isSearchActive ? 'block' : 'none' }}
 				>
-					<input type="text" placeholder="Search" />
+					<input type="text" placeholder="Search (NYI)" />
 				</div>
 				<Icons.Search
 					className={`app-header_search ${

@@ -6,8 +6,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	margin: 10px;
+	max-width: 1200px;
+	margin: 0.5em auto;
 }
+
+@media all and (max-width: 1200px) {
+	.card {
+		margin: 0.2em 0.5em !important;
+	}
+}
+
 
 .card_content {
 	display: flex;
