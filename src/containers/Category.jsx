@@ -8,12 +8,17 @@ import './Category.css';
 const Category = () => {
 	const { category } = useParams();
 	return (
-		// <Page>
 		<Card>
-			<h3>{Categories[category].name}</h3>
-			<p>{Categories[category].description}</p>
+			<div className="category_header">
+				<div className="category_title">
+					{Categories[category].name}
+				</div>
+				<div className="category_videocount">0 Videos</div>
+			</div>
+			<div className="category_description">
+				{Categories[category].description}
+			</div>
 		</Card>
-		// </Page>
 	);
 };
 

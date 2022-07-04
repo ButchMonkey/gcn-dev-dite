@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './AppHeader.css';
 import Icons from '../assets/Images/Icons';
 import Branding from '../assets/Images/BrandingIcons';
@@ -27,37 +27,63 @@ const socials = [
 	},
 ];
 
-const AppHeader = ({ className, children }) => (
-	<div className={[className, 'app-header'].filter(Boolean).join(' ')}>
-		<h1 className="app-header_container">
-			<div className="header_flex_spacer" style={{ width: 30 }} />
+const AppHeader = ({ className, children }) => {
+	const [isSearchActive, handleSearch] = useState(false);
+	const handleToggleSearch = () => {
+		handleSearch((prevSearch) => !prevSearch);
+	};
+	return (
+		<div className={[className, 'app-header'].filter(Boolean).join(' ')}>
+			<h1 className="app-header_container">
+				<div className="header_flex_spacer" style={{ width: 30 }} />
 
-			<NavLink to="/" className="app-header_logo">
-				<Branding.Logo style={{ height: 24, marginLeft: 8 }} />
-			</NavLink>
+				<NavLink
+					to="/"
+					className="app-header_logo"
+					style={{ display: isSearchActive ? 'none' : 'block' }}
+				>
+					<Branding.Logo style={{ height: 24, marginLeft: 8 }} />
+				</NavLink>
 
-			<div className="app-header_flex_spacer" />
-			<Icons.Search />
-			<div className="app-header_divider" />
-			{
-				/* Loop over socials array, makes it easier to update */
-				socials.map((social) => {
-					return (
-						<a
-							key={social.name}
-							className="app-header_social"
-							href={social.href}
-							target="_blank"
-							rel="noreferrer"
-						>
-							<social.icon />
-						</a>
-					);
-				})
-			}
-		</h1>
-		{children}
-	</div>
-);
+				{/* <div className="app-header_flex_spacer" /> */}
+				<div
+					className="app-header_search-bar"
+					style={{ display: isSearchActive ? 'block' : 'none' }}
+				>
+					<input type="text" placeholder="Search" />
+				</div>
+				<Icons.Search
+					className={`app-header_search ${
+						isSearchActive ? 'active' : ''
+					}`}
+					onClick={handleToggleSearch}
+				/>
+				<div
+					className={`app-header_socials-group ${
+						isSearchActive ? 'active' : ''
+					}`}
+				>
+					{
+						/* Loop over socials array, makes it easier to update */
+						socials.map((social) => {
+							return (
+								<a
+									key={social.name}
+									className="app-header_social"
+									href={social.href}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<social.icon />
+								</a>
+							);
+						})
+					}
+				</div>
+			</h1>
+			{children}
+		</div>
+	);
+};
 
 export default AppHeader;

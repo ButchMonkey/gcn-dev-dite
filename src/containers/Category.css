@@ -1,0 +1,22 @@
+.category_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 0.5em;
+	flex-wrap: wrap;
+}
+
+.category_title {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.category_videocount {
+	color: #1d1d1d80;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.category_description {
+	flex: none;
+}
