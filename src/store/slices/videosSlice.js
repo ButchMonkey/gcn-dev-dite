@@ -11,6 +11,12 @@ export const videosSlice = createSlice({
 	initialState,
 	reducers: {
 		fetchVideos: (state) => {
+			/*
+				Use api.json to fetch data instead of online API due to CORS error.
+				Would ideally be able to query videos from online API instead of
+				having to load all videos into the state on initial load
+			*/
+
 			state.list = api.map((video) => {
 				// Add the thumbnail URL to the video object
 				return {

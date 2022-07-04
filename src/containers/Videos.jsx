@@ -37,12 +37,11 @@ const Videos = () => {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
+		window.scrollTo(0, 0);
 		dispatch(fetchVideos());
 	}, [dispatch]);
 
 	const video = useSelector((state) => selectVideoByURL(state, videoId));
-	console.log(video);
-
 	if (!video) {
 		return (
 			<Card>
@@ -68,7 +67,7 @@ const Videos = () => {
 				<div className="video_title">
 					{video.title}
 
-					{/* Prefer flexbox over float, but this is much easier in this instance */}
+					{/* Prefer flexbox over float, but this is much easier in this */}
 					<div className="video_socials" style={{ float: 'right' }}>
 						{socials.map((social) => {
 							return (
