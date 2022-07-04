@@ -20,7 +20,7 @@ Should you wish to view these designs, you can check out the figma project [here
 Pages include:
 
 -   Scrapbook - This is my main playground for coming up with designs. It shows the iteration of each thought I had while designing.
--   Final - The final design that I settled on (suprising, I know)
+-   Final - The final design that I settled on (surprising, I know)
 -   Resources - A collection of icons, logos and colors that I planned on using
 -   Components - A few grouped elements that makes it easier for importing onto other pages
 
