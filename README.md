@@ -5,6 +5,7 @@ My sample of the Global Cycling Network website for mobile.
 ## How to view
 
 Either run the development mode server with `yarn start` or build and host yourself with `yarn build`.\
+Make sure to run `yarn install` first to grab all the node packages!\
 Alternatively view the demo on github page - https://butchmonkey.github.io/gcn-dev-site/
 
 (Only limitation with GH pages is that refresh will not route correctly)
